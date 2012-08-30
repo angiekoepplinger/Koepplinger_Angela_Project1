@@ -25,11 +25,9 @@
 							<option value="Product">Product</option>
 						</select>
 					</li>
-					<li>
-						<ul>
-							<li><label for="Work Order">Work Order:<label><input type="text" id="Work Order" placeholder="Project Name"/></li>
-							<li><label for="Support Site">Support Site:<label><input type="text" id="Support Site" placeholder="ex. TES"/></li>
-						</ul>
+					<li><label for="Work Order">Work Order:<label><input type="text" id="Work Order" placeholder="Project Name"/></li>
+					<li><label for="Support Site">Support Site:<label><input type="text" id="Support Site" placeholder="ex. TES"/></li>
+				</ul>
 					</li>
 			</fieldset>
 			<fieldset>
@@ -49,18 +47,28 @@
 							<li><input type="radio" name="asset yes/no" value="Yes" id="yes" /><label for="Yes">Yes</label></li>
 							<li><input type="radio" name="asset yes/no" value="No" id="no" /><label for="No">No</label></li>
 						</ul>
-					</li>
-					
-					<li>
-						<ul>
-							<li><label for="Manufacturer">Manufacturer:<label><input type="text" id="Manufacturer" placeholder="ex. Cisco Systems"/></li>
-							<li><label for="Part Number">Part Number:<label><input type="text" id="Part Number" placeholder="ex. WS-C2960C-24TT-L"/></li>
-							<li><label for="Qty">Qty:<label><input type="number" id="Qty" placeholder="ex. 3"/></li>
-						</ul>
-					</li>
+						</li>
+						<li><label for="Manufacturer">Manufacturer:<label><input type="text" id="Manufacturer" placeholder="ex. Cisco Systems"/></li>
+						<li><label for="Part Number">Part Number:<label><input type="text" id="Part Number" placeholder="ex. WS-C2960C-24TT-L"/></li>
+						<li><label for="Qty">Qty:<label><input type="number" id="Qty" placeholder="ex. 3"/></li>
+				</ul>
 			</fieldset>
 			<fieldset>
 				<legend>Additional Information</legend>
+					<ul style="list-style-type:none">
+						<li><label for="Urgency">Urgency:<label><input id="Urgency" type="range" min="100" max="500" /></li>
+						<li><input type="checkbox" name="mgmt approval" value="true" id="true" /><label for="mgmt approval">Approved by Mgmt</label></li>
+						<li><input type="checkbox" name="R&R request" value="true" id="true" /><label for="R&R Request">R&R Request</label></li>
+					</ul>
+						
+
+
+
+			</fieldset>
+			<input type="submit" value="Add Task" />
+		</form>
+	</body>
+</html>
 					<ul style="list-style-type:none">
 
 
